@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=0f61fee3-a075-37f2-a5cb-bc27c5c40ea6)
+archetype (adl_version=1.4; uid=6f4c3f44-aaed-455b-bc65-716f325ba32d)
 	openEHR-EHR-CLUSTER.name_cc.v0
 
 concept
@@ -14,7 +14,7 @@ description
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -30,8 +30,9 @@ This cluster archetype is intended to be used inside FHIR resource aligned arche
 
 https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 cited 19-Jul-2018.">
 		["current_contact"] = <"Hildegard McNicoll, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"cb5306242c853a2cc9933936e500fff7">
-		["build_uid"] = <"af0798e5-d3bc-3693-a635-5aa4a16b2da2">
+		["MD5-CAM-1.0.1"] = <"837216B3380EEE7CDC8C974E487FE65F">
+		["build_uid"] = <"68ccd8fd-6d1a-43e1-b8e9-95873687789d">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition

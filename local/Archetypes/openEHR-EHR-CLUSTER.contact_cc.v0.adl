@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=8c330df4-4634-3d8e-8f45-8debd55a518e)
+archetype (adl_version=1.4; uid=7ec3d7ad-c115-4211-9795-c1a8bd3c1aa3)
 	openEHR-EHR-CLUSTER.contact_cc.v0
 
 concept
@@ -14,11 +14,12 @@ description
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the purpose of capturing patient amd organisation contact information.">
+			copyright = <"© Apperta Foundation">
 			use = <"Use to record patient contact information in line with the corresponding FHIR resource.
 
 The slots for name, telecom, organisation and address should be filled with the appropriate FHIR resource-aligned cluster archetypes.">
@@ -27,10 +28,15 @@ The slots for name, telecom, organisation and address should be filled with the 
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
 		["references"] = <"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1 cited 19-Jul-2018.">
 		["current_contact"] = <"Hildegard McNicoll, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"9a3a275cbed8e79e6203144fc0e9361d">
-		["build_uid"] = <"929dbe01-148c-3589-9c49-f116dad55046">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"A92FD95229E77F51F656499514C2F522">
+		["build_uid"] = <"b8c22650-2ea2-4da8-a4f1-73970b2a83f4">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition

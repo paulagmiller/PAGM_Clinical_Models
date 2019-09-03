@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "9a13f42b0636673c8c60c8fce22eebed",
+      "MD5-CAM-1.0.1" : "e849ccabfac737a1accaac2de3a304a9",
       "PARENT:MD5-CAM-1.0.1" : "1DA7D8EDC23CF1B673C05E6E8FE28EB1"
     },
     "details" : {
@@ -191,12 +191,6 @@
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
-              "cardinality" : {
-                "@type" : "CARDINALITY",
-                "interval" : "0..*",
-                "ordered" : false,
-                "unique" : false
-              },
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
@@ -359,12 +353,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "SECTION",
@@ -372,12 +360,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "SECTION",
@@ -708,12 +690,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -826,12 +802,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -907,7 +877,7 @@
           "nodeId" : "at0031.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-language-003.v0",
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-language-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -961,140 +931,6 @@
       "author" : {
         "name" : "John Tore Valand",
         "organisation" : "Helse Bergen HF, Norway"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "f0c5e105-6d57-45e4-9966-fe3cb19a2063",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5E10897327D9590987FEC03C74491D10"
-      },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om et muntlig, skrevet eller tegnbasert system for kommunikasjon.",
-          "keywords" : [ "tegn", "tegnspråk", "tale", "morsmål" ],
-          "use" : "Brukes for å registrere detaljer om et muntlig, skrevet eller tegnbasert system for kommunikasjon.\r\n\r\nBrukes for eksempel for å registrere hvilket språk som er ønsket eller hvilket språk tolking ble gjennomført på i arketypen CLUSTER.interpreter_details.",
-          "copyright" : "© Nasjonal IKT HF",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "For recording details about a spoken, written or symbolic system of communication.",
-          "keywords" : [ "signing", "sign language", "speake", "tongue" ],
-          "use" : "Use to record details about a spoken, written or symbolic system of communication.\r\n\r\nUse for example to record the requested or actual language for interpretation in the CLUSTER.interpreter_details archetype.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "annotations" : {
-      "@type" : "RESOURCE_ANNOTATIONS",
-      "documentation" : {
-        "en" : {
-          "/items[at0001]" : {
-            "Notes.Authors Note" : "SNOMED CT Subset ID 80181000000131"
-          }
-        },
-        "nb" : {
-          "/items[at0001]" : {
-            "Notes.Authors Note" : "SNOMED CT Subset ID 80181000000131"
-          }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.language.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-language-003.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0002.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0003.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "nb" : { },
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "c27b5254-f7f5-4649-a35c-1df529aed48a",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjoern Arntzen",
-        "organisation" : "Oslo universitetssykehus HF"
       },
       "otherDetails" : { }
     } ]
@@ -1307,12 +1143,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -1441,12 +1271,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -1837,12 +1661,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -1971,12 +1789,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -2209,12 +2021,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
@@ -2223,12 +2029,6 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
-                "cardinality" : {
-                  "@type" : "CARDINALITY",
-                  "interval" : "1..*",
-                  "ordered" : false,
-                  "unique" : false
-                },
                 "children" : [ {
                   "@type" : "C_ARCHETYPE_ROOT",
                   "rmTypeName" : "CLUSTER",
@@ -2330,12 +2130,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -2588,12 +2382,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -2782,12 +2570,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : true,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -2979,12 +2761,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -3210,12 +2986,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -3300,12 +3070,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -3518,12 +3282,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
@@ -3614,12 +3372,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
@@ -3627,12 +3379,6 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
-                "cardinality" : {
-                  "@type" : "CARDINALITY",
-                  "interval" : "1..*",
-                  "ordered" : false,
-                  "unique" : false
-                },
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
@@ -3807,12 +3553,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -3981,12 +3721,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -4653,12 +4387,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -4757,12 +4485,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -4867,12 +4589,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -5080,12 +4796,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -5273,12 +4983,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -5485,12 +5189,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -5680,12 +5378,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -5818,12 +5510,6 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
-                "cardinality" : {
-                  "@type" : "CARDINALITY",
-                  "interval" : "1..*",
-                  "ordered" : false,
-                  "unique" : false
-                },
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
@@ -6031,12 +5717,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -6238,12 +5918,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -6438,12 +6112,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -6699,12 +6367,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -6966,12 +6628,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -7183,12 +6839,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -7372,12 +7022,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -7572,12 +7216,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -7833,12 +7471,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -8048,12 +7680,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -8241,12 +7867,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -8539,12 +8159,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : true,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -9226,12 +8840,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -9356,12 +8964,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -9482,12 +9084,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -9671,12 +9267,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -9871,12 +9461,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -10132,12 +9716,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -10347,12 +9925,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -10541,12 +10113,6 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "cardinality" : {
-          "@type" : "CARDINALITY",
-          "interval" : "1..*",
-          "ordered" : false,
-          "unique" : false
-        },
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -10715,6 +10281,131 @@
       "codeString" : "en"
     },
     "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "65ee45ce-a233-46d7-a3e4-5939319ad83e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "86637A95CB32F983E80D8F9506488FE6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.language.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-language-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0007", "at0008", "at0009", "at0010", "at0012" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "fd543e5c-eb12-4e05-b4b4-a3933a4e7b7f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjoern Arntzen, John Tore Valand",
+        "organisation" : "Oslo universitetssykehus HF, Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {

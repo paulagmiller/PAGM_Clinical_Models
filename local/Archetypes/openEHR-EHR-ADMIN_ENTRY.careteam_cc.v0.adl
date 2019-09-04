@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=f6e33aba-cd1d-3adf-9f29-a5436f8d603b)
+archetype (adl_version=1.4; uid=5da93e37-e608-4ac1-93d6-8fc6168082a1)
 	openEHR-EHR-ADMIN_ENTRY.careteam_cc.v0
 
 concept
@@ -14,11 +14,12 @@ description
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording of care team details aligned with corresponding FHIR resource.">
+			copyright = <"© Apperta Foundation">
 			use = <"Use to record care team details aligned with the corresponding FHIR resources.
 
 The slots for member, on behalf of and managing organisation should be filled with the appropriate FHIR resource-aligned clusters, i.e. practitioner, contact or organisation.
@@ -28,10 +29,15 @@ This admin archetype is intended to be the main container for any patient contac
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
 		["references"] = <"https://www.hl7.org/fhir/careteam.html cited 20-Jul-2018.">
 		["current_contact"] = <"Hildegard McNicoll, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"0771580f852546d471eccc4e3443f6b7">
-		["build_uid"] = <"910c5e81-1980-32f5-a794-1d6448cac705">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"8DA672E004C3BDD21C14564248DDF846">
+		["build_uid"] = <"cd7ecbbd-87d3-43f7-8d9d-c135ee9b6355">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition

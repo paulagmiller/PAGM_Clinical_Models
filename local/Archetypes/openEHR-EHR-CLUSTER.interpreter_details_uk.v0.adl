@@ -61,8 +61,8 @@ Use to provide persistent information about the individual's needs for an interp
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"1D746F24E18DE29D56F6442204353C22">
-		["build_uid"] = <"c1d2c293-2afa-4a5d-8891-a1e8170dcde2">
+		["MD5-CAM-1.0.1"] = <"0B3F7E319DC345D6A97BDBE18C79D83A">
+		["build_uid"] = <"5eba1aab-005d-46f6-b0fc-8adb222238f2">
 		["revision"] = <"0.0.1-alpha">
 	>
 

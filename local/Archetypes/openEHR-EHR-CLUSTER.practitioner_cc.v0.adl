@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=6fe43ebb-bb8d-33df-86c8-378d7fa7a7a5)
+archetype (adl_version=1.4; uid=a56d5316-3dde-4147-8495-9eff0c2ca3f3)
 	openEHR-EHR-CLUSTER.practitioner_cc.v0
 
 concept
@@ -14,11 +14,12 @@ description
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording of practitioner details aligned with corresponding FHIR resource.">
+			copyright = <"© Apperta Foundation">
 			use = <"Use to record practitioner information in line with the corresponding FHIR resource.
 
 The slots for name, telecom and address should be filled with the appropriate FHIR resource-aligned cluster archetypes.">
@@ -27,10 +28,15 @@ The slots for name, telecom and address should be filled with the appropriate FH
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
 		["references"] = <"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 cited 20-Jul-2018.">
 		["current_contact"] = <"Hildegard McNicoll, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"448d70de8abbcabe260e307ff7347fa5">
-		["build_uid"] = <"e3501975-9252-3f2a-9c7e-7f9b9d446e1d">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"2FB296613CB5B886894CF7DD572C9D76">
+		["build_uid"] = <"932dfe49-96f0-4a26-880a-c098e0fa0f9f">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition

@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "9cfeba4e580f7c6f01e24222b7569888",
+      "MD5-CAM-1.0.1" : "f4acaef910d3afd769b223fa76f7af27",
       "PARENT:MD5-CAM-1.0.1" : "1DA7D8EDC23CF1B673C05E6E8FE28EB1"
     },
     "details" : {
@@ -754,7 +754,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1D746F24E18DE29D56F6442204353C22"
+        "PARENT:MD5-CAM-1.0.1" : "0B3F7E319DC345D6A97BDBE18C79D83A"
       },
       "details" : {
         "nb" : {
@@ -945,7 +945,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "767E39313E0D137FA9E95FE7477DEEF8"
+        "PARENT:MD5-CAM-1.0.1" : "E3A8F38126B720CBCBCA085F2190A241"
       },
       "details" : {
         "de" : {
@@ -1057,6 +1057,21 @@
           "use" : "Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.",
           "misuse" : "No se debe utilizar para registrar síntomas descritos por el paciente, para eso utilizar el arquetipo CLUSTER.symtom.\r\n\r\nNo se debe utilizar para registrar hallazgos, para eso utilizar arquetipos relacionados con la examinación, usualmente relacionados con el arquetipo OBSERVATION.exam\r\n\r\nNo se debe utilizar para registrar diagnósticos realizados sobre resultados de estudios diagnósticos como laboratorio o imagenología.\r\n\r\nNo se debe utilizar para registrar el motivo de consulta o problema presentado por el paciente, para eso utilizar el arquetipo EVALUATION.reason_for_encounter\r\n\r\nNo se debe utilizar para registrar riesgos o problemas potenciales, para eso utilizar el arquetipo EVALUATION.health_risk\r\n\r\nNo se debe utilizar para registrar la ausencia de un problema, para eso utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att dokumentera ett enskilt identifierat hälsoproblem eller diagnos. Spännvidden av ett hälsoproblem har avsiktligt gjorts bred, för att kunna fånga upp eventuella verkliga eller upplevda *oroskänslor* som kan inverka negativt på en individs välbefinnande. Ett hälsoproblem kan identifieras av individen, en vårdgivare eller en sjukvårdspersonal. En diagnos definieras däremot baserat på objektiva kliniska kriterier, oftast fastställd endast av sjukvårdspersonal.",
+          "keywords" : [ "*fråga", "tillstånd", "problem", "diagnos", "oro", "skada", "klinisk tolkning" ],
+          "use" : "Används för att beskriva ett enskilt identifierat hälsoproblem eller diagnos.\r\nTydliga definitioner som möjliggör en differentiering mellan ett \"problem\" och en \"diagnos\" är nästan omöjliga i praktiken. Vi kan inte på ett tillförlitligt sätt säga när ett problem bör betraktas som en diagnos. När diagnostiska eller klassificeringskriterier är uppfyllda kan vi tryggt kalla tillståndet en formell diagnos. \r\n\r\nOm det finns stödjande bevis tillgängligt, kan det ändå vara giltigt att använda termen \"diagnos\" trots att dessa villkor ännu inte uppfyllts. Det är inte lätt att definiera mängden stödjande bevis som krävs för diagnosmärkning och i verkligheten varierar det från fall till fall. Många standardkommittéer har brottats med denna definitionsgåta i åratal utan tydlig upplösning.\r\n\r\nVid tillämpning av klinisk dokumentation med denna arketyp betraktas problem och diagnoser som ett kontinuum med utrymme för fler detaljer och stödjande bevis som vanligtvis ger stöd för märkningen \"diagnos\". I denna arketyp är det inte nödvändigt att klassificera tillståndet som ett \"problem\" eller \"diagnos\". Kraven för att stödja dokumentation av vardera är identiska, innehållande extra datastruktur som krävs för att stödja inmatning av bevis om och när den blir tillgänglig.\r\nExempel på problem är: individens uttryckliga önskan att gå ner i vikt, men utan en formell diagnos av fetma eller ett relationsproblem med en familjemedlem. Exempel på formella diagnoser skulle omfatta cancer som stöds av anamnes, undersökningsfynd, histopatologiska fynd, radiologiska fynd samt möter alla kända kriteriekrav för diagnostik. \r\n\r\nI praktiken befinner sig de flesta problem eller diagnoser inte i någon ände av problemet-diagnos spektrumet, utan någonstans däremellan. \r\nDenna arketyp kan användas i flera kontexter, exempelvis för dokumentation av ett problem eller en klinisk diagnos under en klinisk konsultation, ifyllnad av en fast problemlista eller för en redogörande sammanfattning i ett utskrivningsdokument.\r\n\r\nI praktiken använder kliniker många kontext-specifika bestämningar som exempelvis tidigare och nuvarande, primär och sekundär, aktiv och inaktiv, inskrivning och utskrivning etc. Kontexterna kan vara plats-, specialitet-, episod-eller arbetsflödes-specifika. Dessa kan orsaka förvirring eller t.o.m. vara potentiella säkerhetsproblem om de förevigas i problemlistor eller delas i dokument som är utanför den ursprungliga kontexten.\r\nDessa bestämningar kan vara separata i arketyperna och ingår i \"status\"-fältet, eftersom deras användning varierar i olika inställningar. \r\nDet förväntas att de huvudsakligen används i en lämplig kontext och inte sprids utanför kontexten utan tydlig förståelse för potentiella konsekvenser.\r\nExempelvis kan en diagnos vara primär för en kliniker och sekundär för en annan specialist, ett aktivt problem kan bli inaktivt (eller vice versa) och detta kan påverka den säkra användningen av kliniskt beslutsstöd.\r\n\r\nI allmänhet bör dessa bestämningar tillämpas lokalt inom ramen för det kliniska systemet, och i praktiken bör dessa tillstånd ordnas manuellt av kliniker för att säkerställa att listor över nuvarande och tidigare, aktiv och inaktiv eller primärt och sekundärt problem är kliniskt korrekta.\r\nDenna arketyp kommer att användas som en komponent inom den problemorienterade patientjournalen som beskrivs av Larry Weed. Ytterligare arketyper, som presenterar kliniska begrepp som villkor som en övergripande organisatör för diagnoser etc. kommer att behöva utvecklas för att stödja denna strategi.\r\n\r\nI vissa situationer, kan identifiering av en diagnos vara lämplig enbart inom läkarnas expertis, men det är inte avsikten med denna arketyp. Diagnoser kan dokumenteras med hjälp av denna arketyp av vilken som helst sjukvårdspersonal.\r\n",
+          "misuse" : "Ska inte användas för att dokumentera symtom som beskrivs av individen. Använd CLUSTER. symptom arketypen vanligtvis inom OBSERVATION.story-arketypen för det ändamålet.\r\n\r\nSka inte användas för att dokumentera undersökningsfynd. Använda då istället arketyper från den undersökningsrelaterade gruppen CLUSTER- som oftast är inkapslad i Observation Exam-arketypen.\r\n\r\nSka inte användas för att dokumentera testresultat från laboratoriet eller till relaterade diagnoser, exempelvis patologiska diagnoser. Använd då istället en lämplig arketyp från laboratoriegruppen OBSERVATION.\r\n\r\nSka inte användas för att dokumentera undersökningsfynd genom bildmedia eller bilddiagnostik. Använd då istället en lämplig arketyp från bildmediegruppen OBSERVATION arketyper.\r\n\r\nSka inte användas för att dokumentera \"differentialdiagnostik\". Använd då istället EVALUATION.differential_diagnosis-arketypen.\r\n\r\nSka inte användas för att dokumentera \"Anledning till Vårdtillfälle\" eller \"Huvudsakligt besvär\". Använd EVALUATION.reason_for_encounter-arketypen till dessa ändamål.\r\n\r\nSka inte användas för att dokumentera åtgärder. Använd då istället ACTION.procedure-arketypen.\r\n\r\nSka inte användas för att dokumentera uppgifter om graviditet. Använd EVALUATION.pregnancy_bf_status och EVALUATION.pregnancy och relaterade arketyper till dessa ändamål.\r\n\r\nSka inte användas för att dokumentera bedömningar om hälsorisker eller potentiella problem. Använd då istället EVALUATION.health_risk-arketypen.\r\n\r\nSka inte användas för att dokumentera redogörelser om biverkningar, allergier eller intoleranser. Använd EVALUATION.adverse_reaction-arketyp för dessa ändamål.\r\n\r\nSka inte användas för särskild dokumentering av frånvaro (eller negativ närvaro) av ett problem eller en diagnos, exempelvis \"inga kända problem eller diagnoser\" eller \"Ingen känd diabetes\". Använd EVALUATION.exclusion-problem_arketypen för att uttrycka ett positivt utlåtande om uteslutning av ett problem eller diagnos. \r\n\r\n",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1296,6 +1311,19 @@
             "text" : "Key diagnosis",
             "description" : "*Identification of the problem or diagnosis, by name.(en)",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Date of onset(en)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\n(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
         },
         "es-ar" : {
@@ -1305,6 +1333,13 @@
             "text" : "Key diagnosis",
             "description" : "Identificación del problema o diagnóstico, por nombre.",
             "comment" : "Se prefiere la codificación del nombre del problema o diagnóstico mediante una terminología cuando esto sea posible."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Sitio corporal",
+            "description" : "Identificación de un sitio corporal simple para la localización o el problema.",
+            "comment" : "Se prefiere la codificación de la localización anatómica mediante una terminología cuando esto sea posible.\nUtilícese este dato para registrar localizaciones anatómicas precoordinadas. Si los requerimientos para el registro de una localización anatómica son determinadas en tiempo de ejecución por parte de la aplicación, o se requiere un modelado más complejo tal como una localización relativa, utilícese CLUSTER.anatomical_location or CLUSTER.relative_location dentro del slot \"localización anatómica estructurada\" en este arquetipo. Las ocurrencias de este dato son ilimitadas para así permitir escenarios clínicos tales como la descripción de un rash en múltiples localizaciones pero donde todos los demás atributos son idénticos. Si la localización anatómica esta incluida en el nombre del problema o diagnóstico mediante códigos precoordinados, este dato se torna redundante."
           }
         },
         "de" : {
@@ -1314,6 +1349,19 @@
             "text" : "Key diagnosis",
             "description" : "*Identification of the problem or diagnosis, by name.(en)",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Date of onset(en)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\n(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
         },
         "en" : {
@@ -1323,6 +1371,20 @@
             "text" : "Key diagnosis",
             "description" : "Identification of the problem or diagnosis, by name.",
             "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Date/time of resolution",
+            "description" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.",
+            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\n"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Body site",
+            "description" : "Identification of a simple body site for the location of the problem or diagnosis.",
+            "comment" : "Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n"
           }
         },
         "ar-sy" : {
@@ -1332,6 +1394,19 @@
             "text" : "Key diagnosis",
             "description" : "*Identification of the problem or diagnosis, by name.(en)",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Date of onset(en)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\n(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
         },
         "pt-br" : {
@@ -1341,6 +1416,34 @@
             "text" : "Key diagnosis",
             "description" : "Identificação do problema ou diagnóstico, por nome.",
             "comment" : "Quando possível, é preferível usar a codificação do nome do problema ou diagnóstico com uma terminologia."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Data / hora da reconhecimento clínico",
+            "description" : "Data / hora, estimada ou real, que o diagnóstico ou o problema foi reconhecido por um profissional de saúde.",
+            "comment" : "Datas parciais são aceitáveis. \nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade no momento do reconhecimento clínico\" deve ser convertida para uma data usando o sujeito data de nascimento."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Severidade",
+            "description" : "Uma avaliação global da severidade do problema ou diagnóstico.",
+            "comment" : "Se a severidade está incluída no nome do Problema / diagnóstico através de códigos pré-coordenados, este elemento de dados torna-se redundante. \nNota: a classificação mais específica da gravidade pode ser gravada utilizando os detalhes específicos SLOT."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Data /tempo de resolução",
+            "description" : "Data / tempo, estimado ou atual, de resolução ou de dispensa desse problema ou diagnóstico, como determinado por um profissional de saúde.",
+            "comment" : "Datas parciais são aceitáveis. \nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade na ocasião da resolução\" deve ser convertida para uma data usando o sujeito data de nascimento."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Local do corpo",
+            "description" : "Simples identificação de um local do corpo para a localização do problema ou diagnóstico.",
+            "comment" : "A codificação do nome da localização anatômica com uma terminologia é preferível, quando possível.\nUtilize este elemento de dados para gravar localizações anatômicas precoordenadas. Se os requisitos para gravar a localização anatômica são determinados em tempo real através da aplicação ou requerem uma modelagem mais complexa, como localizações relativas, em seguida, use o CLUSTER.anatomical_location ou CLUSTER.relative_location dentro do SLOT 'localização anatômica estruturada\" neste arquétipo.\nOcorrências para este elemento de dados são ilimitadas para permitir cenários clínicos tais como a descrição de uma erupção cutânea em vários locais, mas em que todos os outros atributos são idênticos. Se a localização anatômica é incluída ao nome do Problema / diagnóstico, através de códigos pré-coordenados, este elemento de dados torna-se redundante."
           }
         },
         "nb" : {
@@ -1350,8 +1453,43 @@
             "text" : "Key diagnosis",
             "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.\r\n\r\n",
             "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket, der det er mulig."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Dato/tid for klinisk stadfestelse",
+            "description" : "Antatt eller faktisk dato/tid da diagnosen eller problemet ble bekreftet av helsepersonell.",
+            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Dato/tid for bedring",
+            "description" : "Estimert eller faktisk dato/tid for bedring eller remisjon av det aktuelle problemet eller diagnosen, fastslått av helsepersonell.\n\n\n\n",
+            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Dato for debut",
+            "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Problem/Diagnosis(en)",
+            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)",
+            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1451,6 +1589,20 @@
       },
       "accreditation" : "Computer Engineer",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela",
+        "organisation" : "Tieto Sweden AB",
+        "email" : "ext.kirsi.poikela@tieto.com"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1463,7 +1615,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "767E39313E0D137FA9E95FE7477DEEF8"
+        "PARENT:MD5-CAM-1.0.1" : "E3A8F38126B720CBCBCA085F2190A241"
       },
       "details" : {
         "de" : {
@@ -1575,6 +1727,21 @@
           "use" : "Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.",
           "misuse" : "No se debe utilizar para registrar síntomas descritos por el paciente, para eso utilizar el arquetipo CLUSTER.symtom.\r\n\r\nNo se debe utilizar para registrar hallazgos, para eso utilizar arquetipos relacionados con la examinación, usualmente relacionados con el arquetipo OBSERVATION.exam\r\n\r\nNo se debe utilizar para registrar diagnósticos realizados sobre resultados de estudios diagnósticos como laboratorio o imagenología.\r\n\r\nNo se debe utilizar para registrar el motivo de consulta o problema presentado por el paciente, para eso utilizar el arquetipo EVALUATION.reason_for_encounter\r\n\r\nNo se debe utilizar para registrar riesgos o problemas potenciales, para eso utilizar el arquetipo EVALUATION.health_risk\r\n\r\nNo se debe utilizar para registrar la ausencia de un problema, para eso utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att dokumentera ett enskilt identifierat hälsoproblem eller diagnos. Spännvidden av ett hälsoproblem har avsiktligt gjorts bred, för att kunna fånga upp eventuella verkliga eller upplevda *oroskänslor* som kan inverka negativt på en individs välbefinnande. Ett hälsoproblem kan identifieras av individen, en vårdgivare eller en sjukvårdspersonal. En diagnos definieras däremot baserat på objektiva kliniska kriterier, oftast fastställd endast av sjukvårdspersonal.",
+          "keywords" : [ "*fråga", "tillstånd", "problem", "diagnos", "oro", "skada", "klinisk tolkning" ],
+          "use" : "Används för att beskriva ett enskilt identifierat hälsoproblem eller diagnos.\r\nTydliga definitioner som möjliggör en differentiering mellan ett \"problem\" och en \"diagnos\" är nästan omöjliga i praktiken. Vi kan inte på ett tillförlitligt sätt säga när ett problem bör betraktas som en diagnos. När diagnostiska eller klassificeringskriterier är uppfyllda kan vi tryggt kalla tillståndet en formell diagnos. \r\n\r\nOm det finns stödjande bevis tillgängligt, kan det ändå vara giltigt att använda termen \"diagnos\" trots att dessa villkor ännu inte uppfyllts. Det är inte lätt att definiera mängden stödjande bevis som krävs för diagnosmärkning och i verkligheten varierar det från fall till fall. Många standardkommittéer har brottats med denna definitionsgåta i åratal utan tydlig upplösning.\r\n\r\nVid tillämpning av klinisk dokumentation med denna arketyp betraktas problem och diagnoser som ett kontinuum med utrymme för fler detaljer och stödjande bevis som vanligtvis ger stöd för märkningen \"diagnos\". I denna arketyp är det inte nödvändigt att klassificera tillståndet som ett \"problem\" eller \"diagnos\". Kraven för att stödja dokumentation av vardera är identiska, innehållande extra datastruktur som krävs för att stödja inmatning av bevis om och när den blir tillgänglig.\r\nExempel på problem är: individens uttryckliga önskan att gå ner i vikt, men utan en formell diagnos av fetma eller ett relationsproblem med en familjemedlem. Exempel på formella diagnoser skulle omfatta cancer som stöds av anamnes, undersökningsfynd, histopatologiska fynd, radiologiska fynd samt möter alla kända kriteriekrav för diagnostik. \r\n\r\nI praktiken befinner sig de flesta problem eller diagnoser inte i någon ände av problemet-diagnos spektrumet, utan någonstans däremellan. \r\nDenna arketyp kan användas i flera kontexter, exempelvis för dokumentation av ett problem eller en klinisk diagnos under en klinisk konsultation, ifyllnad av en fast problemlista eller för en redogörande sammanfattning i ett utskrivningsdokument.\r\n\r\nI praktiken använder kliniker många kontext-specifika bestämningar som exempelvis tidigare och nuvarande, primär och sekundär, aktiv och inaktiv, inskrivning och utskrivning etc. Kontexterna kan vara plats-, specialitet-, episod-eller arbetsflödes-specifika. Dessa kan orsaka förvirring eller t.o.m. vara potentiella säkerhetsproblem om de förevigas i problemlistor eller delas i dokument som är utanför den ursprungliga kontexten.\r\nDessa bestämningar kan vara separata i arketyperna och ingår i \"status\"-fältet, eftersom deras användning varierar i olika inställningar. \r\nDet förväntas att de huvudsakligen används i en lämplig kontext och inte sprids utanför kontexten utan tydlig förståelse för potentiella konsekvenser.\r\nExempelvis kan en diagnos vara primär för en kliniker och sekundär för en annan specialist, ett aktivt problem kan bli inaktivt (eller vice versa) och detta kan påverka den säkra användningen av kliniskt beslutsstöd.\r\n\r\nI allmänhet bör dessa bestämningar tillämpas lokalt inom ramen för det kliniska systemet, och i praktiken bör dessa tillstånd ordnas manuellt av kliniker för att säkerställa att listor över nuvarande och tidigare, aktiv och inaktiv eller primärt och sekundärt problem är kliniskt korrekta.\r\nDenna arketyp kommer att användas som en komponent inom den problemorienterade patientjournalen som beskrivs av Larry Weed. Ytterligare arketyper, som presenterar kliniska begrepp som villkor som en övergripande organisatör för diagnoser etc. kommer att behöva utvecklas för att stödja denna strategi.\r\n\r\nI vissa situationer, kan identifiering av en diagnos vara lämplig enbart inom läkarnas expertis, men det är inte avsikten med denna arketyp. Diagnoser kan dokumenteras med hjälp av denna arketyp av vilken som helst sjukvårdspersonal.\r\n",
+          "misuse" : "Ska inte användas för att dokumentera symtom som beskrivs av individen. Använd CLUSTER. symptom arketypen vanligtvis inom OBSERVATION.story-arketypen för det ändamålet.\r\n\r\nSka inte användas för att dokumentera undersökningsfynd. Använda då istället arketyper från den undersökningsrelaterade gruppen CLUSTER- som oftast är inkapslad i Observation Exam-arketypen.\r\n\r\nSka inte användas för att dokumentera testresultat från laboratoriet eller till relaterade diagnoser, exempelvis patologiska diagnoser. Använd då istället en lämplig arketyp från laboratoriegruppen OBSERVATION.\r\n\r\nSka inte användas för att dokumentera undersökningsfynd genom bildmedia eller bilddiagnostik. Använd då istället en lämplig arketyp från bildmediegruppen OBSERVATION arketyper.\r\n\r\nSka inte användas för att dokumentera \"differentialdiagnostik\". Använd då istället EVALUATION.differential_diagnosis-arketypen.\r\n\r\nSka inte användas för att dokumentera \"Anledning till Vårdtillfälle\" eller \"Huvudsakligt besvär\". Använd EVALUATION.reason_for_encounter-arketypen till dessa ändamål.\r\n\r\nSka inte användas för att dokumentera åtgärder. Använd då istället ACTION.procedure-arketypen.\r\n\r\nSka inte användas för att dokumentera uppgifter om graviditet. Använd EVALUATION.pregnancy_bf_status och EVALUATION.pregnancy och relaterade arketyper till dessa ändamål.\r\n\r\nSka inte användas för att dokumentera bedömningar om hälsorisker eller potentiella problem. Använd då istället EVALUATION.health_risk-arketypen.\r\n\r\nSka inte användas för att dokumentera redogörelser om biverkningar, allergier eller intoleranser. Använd EVALUATION.adverse_reaction-arketyp för dessa ändamål.\r\n\r\nSka inte användas för särskild dokumentering av frånvaro (eller negativ närvaro) av ett problem eller en diagnos, exempelvis \"inga kända problem eller diagnoser\" eller \"Ingen känd diabetes\". Använd EVALUATION.exclusion-problem_arketypen för att uttrycka ett positivt utlåtande om uteslutning av ett problem eller diagnos. \r\n\r\n",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1814,6 +1981,19 @@
             "text" : "Other relevant condition",
             "description" : "*Identification of the problem or diagnosis, by name.(en)",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Date of onset(en)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\n(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
         },
         "es-ar" : {
@@ -1823,6 +2003,13 @@
             "text" : "Other relevant condition",
             "description" : "Identificación del problema o diagnóstico, por nombre.",
             "comment" : "Se prefiere la codificación del nombre del problema o diagnóstico mediante una terminología cuando esto sea posible."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Sitio corporal",
+            "description" : "Identificación de un sitio corporal simple para la localización o el problema.",
+            "comment" : "Se prefiere la codificación de la localización anatómica mediante una terminología cuando esto sea posible.\nUtilícese este dato para registrar localizaciones anatómicas precoordinadas. Si los requerimientos para el registro de una localización anatómica son determinadas en tiempo de ejecución por parte de la aplicación, o se requiere un modelado más complejo tal como una localización relativa, utilícese CLUSTER.anatomical_location or CLUSTER.relative_location dentro del slot \"localización anatómica estructurada\" en este arquetipo. Las ocurrencias de este dato son ilimitadas para así permitir escenarios clínicos tales como la descripción de un rash en múltiples localizaciones pero donde todos los demás atributos son idénticos. Si la localización anatómica esta incluida en el nombre del problema o diagnóstico mediante códigos precoordinados, este dato se torna redundante."
           }
         },
         "de" : {
@@ -1832,6 +2019,19 @@
             "text" : "Other relevant condition",
             "description" : "*Identification of the problem or diagnosis, by name.(en)",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Date of onset(en)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\n(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
         },
         "en" : {
@@ -1841,6 +2041,20 @@
             "text" : "Other relevant condition",
             "description" : "Identification of the problem or diagnosis, by name.",
             "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Date/time of resolution",
+            "description" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.",
+            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\n"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Body site",
+            "description" : "Identification of a simple body site for the location of the problem or diagnosis.",
+            "comment" : "Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n"
           }
         },
         "ar-sy" : {
@@ -1850,6 +2064,19 @@
             "text" : "Other relevant condition",
             "description" : "*Identification of the problem or diagnosis, by name.(en)",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Date of onset(en)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\n(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
         },
         "pt-br" : {
@@ -1859,6 +2086,34 @@
             "text" : "Other relevant condition",
             "description" : "Identificação do problema ou diagnóstico, por nome.",
             "comment" : "Quando possível, é preferível usar a codificação do nome do problema ou diagnóstico com uma terminologia."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Data / hora da reconhecimento clínico",
+            "description" : "Data / hora, estimada ou real, que o diagnóstico ou o problema foi reconhecido por um profissional de saúde.",
+            "comment" : "Datas parciais são aceitáveis. \nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade no momento do reconhecimento clínico\" deve ser convertida para uma data usando o sujeito data de nascimento."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Severidade",
+            "description" : "Uma avaliação global da severidade do problema ou diagnóstico.",
+            "comment" : "Se a severidade está incluída no nome do Problema / diagnóstico através de códigos pré-coordenados, este elemento de dados torna-se redundante. \nNota: a classificação mais específica da gravidade pode ser gravada utilizando os detalhes específicos SLOT."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Data /tempo de resolução",
+            "description" : "Data / tempo, estimado ou atual, de resolução ou de dispensa desse problema ou diagnóstico, como determinado por um profissional de saúde.",
+            "comment" : "Datas parciais são aceitáveis. \nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade na ocasião da resolução\" deve ser convertida para uma data usando o sujeito data de nascimento."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Local do corpo",
+            "description" : "Simples identificação de um local do corpo para a localização do problema ou diagnóstico.",
+            "comment" : "A codificação do nome da localização anatômica com uma terminologia é preferível, quando possível.\nUtilize este elemento de dados para gravar localizações anatômicas precoordenadas. Se os requisitos para gravar a localização anatômica são determinados em tempo real através da aplicação ou requerem uma modelagem mais complexa, como localizações relativas, em seguida, use o CLUSTER.anatomical_location ou CLUSTER.relative_location dentro do SLOT 'localização anatômica estruturada\" neste arquétipo.\nOcorrências para este elemento de dados são ilimitadas para permitir cenários clínicos tais como a descrição de uma erupção cutânea em vários locais, mas em que todos os outros atributos são idênticos. Se a localização anatômica é incluída ao nome do Problema / diagnóstico, através de códigos pré-coordenados, este elemento de dados torna-se redundante."
           }
         },
         "nb" : {
@@ -1868,8 +2123,43 @@
             "text" : "Other relevant condition",
             "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.\r\n\r\n",
             "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket, der det er mulig."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Dato/tid for klinisk stadfestelse",
+            "description" : "Antatt eller faktisk dato/tid da diagnosen eller problemet ble bekreftet av helsepersonell.",
+            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Dato/tid for bedring",
+            "description" : "Estimert eller faktisk dato/tid for bedring eller remisjon av det aktuelle problemet eller diagnosen, fastslått av helsepersonell.\n\n\n\n",
+            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Dato for debut",
+            "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Problem/Diagnosis(en)",
+            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)",
+            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \n\n(en)"
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1968,6 +2258,20 @@
         "organisation" : "CaboLabs"
       },
       "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela",
+        "organisation" : "Tieto Sweden AB",
+        "email" : "ext.kirsi.poikela@tieto.com"
+      },
       "otherDetails" : { }
     } ]
   }, {
@@ -2266,7 +2570,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9600D96AB99E8C64E6BAC82A2C40AE05"
+        "PARENT:MD5-CAM-1.0.1" : "FBDD7446E1AA5758693D54F2A50BB530"
       },
       "details" : {
         "en" : {
@@ -3242,7 +3546,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DB522FC91E92B10221F17FA8AE1C6555"
+        "PARENT:MD5-CAM-1.0.1" : "8DD05D4D236D335A21D3584B3F548B1D"
       },
       "details" : {
         "en" : {
@@ -3332,7 +3636,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "C8457191152F9311C6E42CDE11570B14"
+        "PARENT:MD5-CAM-1.0.1" : "5b3e63197553813a07335c1739aafe15"
       },
       "details" : {
         "en" : {
@@ -3689,7 +3993,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DADD5A587AF703DA85FF9DFD1F78AB68"
+        "PARENT:MD5-CAM-1.0.1" : "4df535c303e436b13f783151e0551627"
       },
       "details" : {
         "en" : {
@@ -8022,7 +8326,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2D066E7C501C2DAEC625DEE2ECD81DF4"
+        "PARENT:MD5-CAM-1.0.1" : "32F9563D428258E02EFA916126110EBF"
       },
       "details" : {
         "de" : {
@@ -8136,6 +8440,38 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera en beskrivande sammanfattning om en patient, ur vårdgivarens perspektiv.",
+          "keywords" : [ "sammanfattning", "slutsats", "sammandrag", "exakt", "abstrakt", "bedömning", "synopsis", "epikris", "kommentar", "anteckning" ],
+          "use" : "Används för att sammanfatta patientens hälsotillstånd. Denna ostrukturerade sammanfattning kan innehålla identifierade hälsoproblem, vilken hälsovård som tillhandahållits, tolkning av sammanhanget, för patientens förståelse. Här kan några av de mjukare, mer subjektiva aspekterna av patientens upplevelse och resa kan beskrivas. Vanligtvis är den här sammanfattningen relaterad till en specifik hälsohändelse, exempelvis en specifik konsultation eller sjukhusvistelse, men den kan också användas för att sammanfatta patientens hälsohistorik under olika tidsperioder.\r\n\r\nI praktiken är klinisk synopsis en metaobservation som kompletterar det befintliga strukturerade kliniska registret. Den tillåter uttryck för subtil, subjektiv eller tolkande information om patienten som kanske inte annars är uppenbar genom enbart strukturerade data, vilket ger en balans och kontext till EHR-dokumentet. Exempelvis kan en klinisk sammanfattning återge en kortfattad sammanfattning av patientens sjukhusvistelse som en del i ett omfattande och strukturerat utskrivningsdokument.",
+          "misuse" : "Ska inte användas för att beskriva specifika och strukturerade hälsouppgifter. Exempelvis vid detaljerad information om problem, diagnoser och testresultat ska den specifika relevanta arketypen EVALUATION.problem, EVALUATION.problem-diagnos samt laboratorie- eller radiologiresultat i OBSERVATIONER användas. \r\n\r\nDen kliniska synopsisen kan återge några kritiska och numeriska resultat när de bedömts viktiga för synopsisens helhet, men det är INTE den primära registreringsplatsen för dem.\r\nUttrycket \"klinisk synopsis\" kan ibland referera till komplexa och omfattande dokument, exempelvis som översikter över utskrivningar eller rapporter. I openEHR ska dessa dokument presenteras som samlingar av begränsade arketyper, dvs. som en mall för sammanfattning av utskrivning eller en rapportmall som innehåller ett antal separata arketyper, av vilka denna kliniska sammanfattnings-arketyp kan vara en.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å sammenfatte og dokumentere et fritekstsammendrag om en pasient fra helsepersonellets perspektiv.",
+          "keywords" : [ "sammendrag", "konklusjon", "disposisjon", "abstrakt", "vurdering", "beskrivelse", "epikrise", "notat" ],
+          "use" : "Anvendes for å registrere en fritekstoppsummering av pasientens helse. Denne ustrukturerte oppsummeringen kan omfatte identifiserte helseproblemer; helsetjenester som er ytt, klinisk fortolkning, pasientens forståelse samt at den muliggjør kommunikasjon vedrørende mer subtile og subjektive aspekter rundt pasientens helseerfaringer. Vanligvis vil denne oppsummeringen bli brukt ved spesifikke hendelser, for eksempel ved en konsultasjon eller sykehusinnleggelse, men oppsummeringen kan også brukes til å sammenfatte pasientens egne erfaringer over varierende tidsperioder. \r\n\r\nI praksis er Klinisk sammendrag en overordnet (meta) observasjon som vil fungere som et tillegg til eksisterende strukturert journal. Dette for å kunne fange og dokumentere pasientenes subtile, subjektive og/eller fortolkede informasjon som ellers alene ikke vil bli tydeliggjort godt nok ved hjelp av strukturerte data alene. Klinisk sammendrag vil således bidra til å gi kontekst og balanse i den elektroniske pasientjournalen. For eksempel kan Klinisk sammendrag gi en konkret oppsummering av pasientens sykehusinnleggelse som en del av en strukturert epikrise.",
+          "misuse" : "Anvendes ikke for å registrere spesifikk strukturert helseinformasjon. For eksempel vil detaljer om problemer, diagnoser og prøveresultat registreres ved hjelp av arketyper som for eksempel EVALUATION.problem_diagnosis, og laboratorie- eller radiologi svar i passende OBSERVATION-arketyper. \"Klinisk sammendrag\" kan for helhetens skyld inkludere og referere enkelte viktige numeriske resultat fra de strukturerte data, men er ikke det primære stedet for registrering av dem.\r\n\r\nBegrepet \"Klinisk sammendrag\" kan i enkelte tilfeller henvise til sammensatte og omfattende dokumenter, som epikriser og ut-notater. I openEHR vil en epikrise eller ut-notat representeres med aggregert informasjon fra underliggende arketyper ved hjelp av templater. Klinisk Sammendrag vil da være kun én av flere arketyper som blir inkludert.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -8194,8 +8530,17 @@
         "ar-sy" : { },
         "de" : { },
         "es-ar" : { },
-        "pt-br" : { },
-        "zh-cn" : { }
+        "pt-br" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Sinopse",
+            "description" : " O sumário, a avaliação, conclusões ou avaliação dos achados clínicos."
+          }
+        },
+        "zh-cn" : { },
+        "nb" : { },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8293,6 +8638,34 @@
         "organisation" : "BIPH"
       },
       "accreditation" : "What goes here?",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela",
+        "organisation" : "Tieto Sweden AB",
+        "email" : "ext.kirsi.poikela@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Ingrid Heitmann",
+        "organisation" : "NTNU and OUS, Registered nurse",
+        "email" : "john.tore.valand@helse-bergen.no"
+      },
       "otherDetails" : { }
     } ]
   }, {

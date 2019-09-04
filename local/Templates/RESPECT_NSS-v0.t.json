@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "e849ccabfac737a1accaac2de3a304a9",
+      "MD5-CAM-1.0.1" : "9cfeba4e580f7c6f01e24222b7569888",
       "PARENT:MD5-CAM-1.0.1" : "1DA7D8EDC23CF1B673C05E6E8FE28EB1"
     },
     "details" : {
@@ -1981,7 +1981,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "863da9019693df6f111c07c730ac4bc4"
+        "PARENT:MD5-CAM-1.0.1" : "75CFC5B9EEA839B817090412E3EAE7D1"
       },
       "details" : {
         "en" : {
@@ -3332,7 +3332,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "590e46cddf1fc8348b48f49aca8cbb77"
+        "PARENT:MD5-CAM-1.0.1" : "C8457191152F9311C6E42CDE11570B14"
       },
       "details" : {
         "en" : {
@@ -3689,7 +3689,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3320dba6a1e9c96849aa0dc9963e98ee"
+        "PARENT:MD5-CAM-1.0.1" : "DADD5A587AF703DA85FF9DFD1F78AB68"
       },
       "details" : {
         "en" : {
@@ -4763,7 +4763,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "448d70de8abbcabe260e307ff7347fa5"
+        "PARENT:MD5-CAM-1.0.1" : "2FB296613CB5B886894CF7DD572C9D76"
       },
       "details" : {
         "en" : {
@@ -5157,7 +5157,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "aa8530873a668659e1e549c643c273e1"
+        "PARENT:MD5-CAM-1.0.1" : "54DF385596D351E03EE2ED3C226D2834"
       },
       "details" : {
         "en" : {
@@ -5339,7 +5339,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0771580f852546d471eccc4e3443f6b7"
+        "PARENT:MD5-CAM-1.0.1" : "8DA672E004C3BDD21C14564248DDF846"
       },
       "details" : {
         "en" : {
@@ -6080,7 +6080,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "771333c67a78e1c785dc004d541ca68f"
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -6335,7 +6335,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "771333c67a78e1c785dc004d541ca68f"
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -6595,7 +6595,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "448d70de8abbcabe260e307ff7347fa5"
+        "PARENT:MD5-CAM-1.0.1" : "2FB296613CB5B886894CF7DD572C9D76"
       },
       "details" : {
         "en" : {
@@ -6807,7 +6807,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "aa8530873a668659e1e549c643c273e1"
+        "PARENT:MD5-CAM-1.0.1" : "54DF385596D351E03EE2ED3C226D2834"
       },
       "details" : {
         "en" : {
@@ -7184,7 +7184,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "771333c67a78e1c785dc004d541ca68f"
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -7439,7 +7439,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "771333c67a78e1c785dc004d541ca68f"
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -7648,7 +7648,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7591df28b6188b3c297f3c6435e3e4e0"
+        "PARENT:MD5-CAM-1.0.1" : "A4C278B59C4D855C741CA3E0C21E9011"
       },
       "details" : {
         "en" : {
@@ -7835,7 +7835,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7591df28b6188b3c297f3c6435e3e4e0"
+        "PARENT:MD5-CAM-1.0.1" : "A4C278B59C4D855C741CA3E0C21E9011"
       },
       "details" : {
         "en" : {
@@ -9052,7 +9052,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "aa8530873a668659e1e549c643c273e1"
+        "PARENT:MD5-CAM-1.0.1" : "54DF385596D351E03EE2ED3C226D2834"
       },
       "details" : {
         "en" : {
@@ -9429,7 +9429,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "771333c67a78e1c785dc004d541ca68f"
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -9684,7 +9684,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "771333c67a78e1c785dc004d541ca68f"
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -9893,7 +9893,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7591df28b6188b3c297f3c6435e3e4e0"
+        "PARENT:MD5-CAM-1.0.1" : "A4C278B59C4D855C741CA3E0C21E9011"
       },
       "details" : {
         "en" : {
@@ -10080,7 +10080,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "448d70de8abbcabe260e307ff7347fa5"
+        "PARENT:MD5-CAM-1.0.1" : "2FB296613CB5B886894CF7DD572C9D76"
       },
       "details" : {
         "en" : {
@@ -10294,7 +10294,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "86637A95CB32F983E80D8F9506488FE6"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om muntlig (tale, tegnspråk) eller skriftlig kommunikasjon.",
+          "keywords" : [ "tegn", "tegnspråk", "tale", "morsmål", "språk", "språkbruk", "dialekt", "taktil", "blindeskrift", "skrift", "målføre", "målform", "skriftspråk", "skriftlig" ],
+          "use" : "For å registrere detaljer om muntlig (tale, tegnspråk) eller skriftlig kommunikasjon. Den overordnede arketypen som denne arketypen nøstes i bestemmer konteksten for registreringen av språket. For eksempel:\r\n- For å registrere et individs primære eller foretrukne språk, bruk denne arketypen i arketypen CLUSTER.communication (Kommunikasjon).\r\n- For å registrere foretrukket eller påkrevd språk som en del av en forespørsel om tolk, bruk denne arketypen i arketypen CLUSTER.interpreter_requirements (Tolkebehov).\r\n- For å registrere språket som ble benyttet av en tolk under en klinisk konsultasjon, bruk denne arketypen i arketypen ACTION.interpretation.\r\n\r\nDersom det er behov for å registrere flere språk - for eksempel norsk og swahili, må arketypen gjentas for hvert språk.",
+          "misuse" : "Brukes ikke for å registrere evne og metoder for utveksling av informasjon med et individ. Bruk arketypen CLUSTER.communication (Kommunikasjon) for dette formålet.\r\n\r\nBrukes ikke for å registrere en forespørsel om tolketjenester. Bruk arketypen CLUSTER.interpreter_requirements (Tolkebehov) sammen med en passende INSTRUCTION-arketype, for eksempel INSTRUCTION.service_request (Helsetjenesteforespørsel).\r\n\r\nBrukes ikke for å registrere detaljer om en tolking som er gjennomført. Bruk arketypen ACTION.interpretation for dette formålet.",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a spoken, written or symbolic system of communication.",
+          "keywords" : [ "signing", "sign language", "tongue", "sign", "speaker", "spoken", "written", "proficiency", "speech", "translate", "interpret" ],
+          "use" : "Use to record details about a spoken, written or symbolic system of communication. The context of the language details is provided by the parent archetypes within which this archetype is nested. For example:\r\n- to record a patient's primary or preferred language, use this archetype within the context of CLUSTER.communication;\r\n- to record the preferred or required language as part of a request for an interpreter, use CLUSTER.interpreter_requirements;\r\n- to record the language used by an interpreter within the context of a clinical consultation, use this archetype within ACTION.interpretation.\r\n\r\nUse a separate instance of this archetype to record each language in the situation where multiple languages need to be recorded, for example Norwegian and Swahili.",
+          "misuse" : "Not to be used to record capability and means for exchanging information with an individual - use CLUSTER.communication for this purpose.\r\n\r\nNot to be used to record details about a request for interpreter services - use CLUSTER.Interpreter_requirements with a suitable INSTRUCTION archetype, for example INSTRUCTION.service_request.\r\n\r\nNot to be used to record details about an interpretation that was performed - use the proposed ACTION.interpretation.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.language.v1",
     "differential" : true,

@@ -30,7 +30,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"C8457191152F9311C6E42CDE11570B14">
+		["MD5-CAM-1.0.1"] = <"5b3e63197553813a07335c1739aafe15">
 		["build_uid"] = <"cb0d45cc-95c7-43f5-ba23-6fcd9aea451a">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -71,7 +71,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0016] occurrences matches {0..*} matches {    -- Link to record of discussion
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia\.v0/}
 					}
 					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Date recommendations made
 						value matches {

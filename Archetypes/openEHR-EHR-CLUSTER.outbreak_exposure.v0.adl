@@ -1,0 +1,97 @@
+archetype (adl_version=1.4; uid=79a1b337-6f35-4ced-8c74-fb1e8212fdc5)
+	openEHR-EHR-CLUSTER.outbreak_exposure.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-02-27">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1a75af1c62fb31770544b7ee5337dad0">
+		["build_uid"] = <"6f2d2bdc-63b9-3916-af2e-04903b70715a">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Outbreak exposure
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Outbreak  location
+				value matches {
+					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0021] occurrences matches {0..*} matches {    -- Location identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[at0024] occurrences matches {0..1} matches {    -- Risk category
+				value matches {
+					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
+					DV_ORDINAL matches {*}
+				}
+			}
+			ELEMENT[at0022] occurrences matches {0..1} matches {    -- Date entered location
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Date left location
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Outbreak exposure">
+					description = <"Outbreak exposure">
+				>
+				["at0007"] = <
+					text = <"Outbreak  location">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Location identifier">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Date entered location">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Date left location">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Risk category">
+					description = <"*">
+				>
+			>
+		>
+	>

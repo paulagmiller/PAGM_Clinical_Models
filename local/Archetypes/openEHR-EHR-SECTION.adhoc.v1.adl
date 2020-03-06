@@ -7,35 +7,11 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
-		["de"] = <
-			language = <[ISO_639-1::de]>
-			author = <
-				["name"] = <"Ramona Wellmann">
-				["organisation"] = <"Medizinische Hochschule Hannover">
-				["email"] = <"wellmann.ramona@mh-hannover.de">
-			>
-		>
 		["ru"] = <
 			language = <[ISO_639-1::ru]>
 			author = <
 				["name"] = <"Art Latyp Латыпов Артур Шамилевич">
 				["organisation"] = <"RusBITech РусБИТех, Москва">
-			>
-		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			author = <
-				["name"] = <"Daniel Hall">
-				["organisation"] = <"Region Östergötland">
-				["email"] = <"daniel.hall@regionostergotland.se">
-			>
-			accreditation = <"Åsa Skagerhult, Lisa Axelsson">
-		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			author = <
-				["name"] = <"Alan March">
-				["organisation"] = <"Hospital Universitario Austral, Buenos Aires, Argentina">
 			>
 		>
 		["nb"] = <
@@ -46,12 +22,11 @@ language
 				["organisation"] = <"Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway">
 			>
 		>
-		["pt-br"] = <
-			language = <[ISO_639-1::pt-br]>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
 			author = <
-				["name"] = <"Vladimir Pizzo">
-				["organisation"] = <"Hospital Sírio Libanês, São Paulo, Brazil">
-				["email"] = <"vladimir.pizzo@hsl.org.br">
+				["name"] = <"Alan March">
+				["organisation"] = <"Hospital Universitario Austral, Buenos Aires, Argentina">
 			>
 		>
 		["sl"] = <
@@ -66,40 +41,18 @@ description
 	original_author = <
 		["date"] = <"2010-07-03">
 		["name"] = <"Dr Ian McNicoll">
-		["organisation"] = <"freshEHR Clinical Informatics, United Kingdom">
-		["email"] = <"ian@freshEHR.com">
+		["organisation"] = <"Ocean Informatics, United Kingdom">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
 	>
 	lifecycle_state = <"published">
-	other_contributors = <"Tomas Alme, DIPS, Norway","Magnus Alsaker, Helsedirektoratet, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)","Koray Atalag, University of Auckland, New Zealand","Gustavo Bacelar-Silva, Healthcare Designs, Brazil (openEHR Translation Editor)","Silje Bakke, Bergen Hospital Trust, Norway","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, Queensland Health, Australia","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)","Carrick Gillespie, Omniq AB, Sweden","Susanna Jönsson, Landstinget i Värmland, Sweden","Konstantinos Kalliamvakos, Cambio Healthcare Systems, Sweden","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Rikard Lovstrom, Swedish Medical Association, Sweden","Hallvard Lærum, Direktoratet for e-helse, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Bjørn Næss, DIPS ASA, Norway","Jarl Sandberg, Tieto Sweden Healthcare & Welfare AB, Sweden (openEHR Translation Editor)","Åsa Skagerhult, Region Östergötland, Sweden (openEHR Translation Editor)","Andreas Sundstrom, Capio S:t Gorans Hospital, Sweden","Erik Sundvall, Region Östergötland + Linköping University, Sweden","Line Sæle, Nasjonal IKT HF, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)">
+	other_contributors = <"Tomas Alme, DIPS, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Bakke, Bergen Hospital Trust, Norway","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, NeHTA, Australia","Konstantinos Kalliamvakos, Cambio Healthcare Systems, Sweden","Lars Karlsen, DIPS ASA, Norway","Heather Leslie, Ocean Informatics, Australia (Editor)","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (Editor)">
 	details = <
-		["de"] = <
-			language = <[ISO_639-1::de]>
-			purpose = <"Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.">
-			keywords = <"Abschnitt","Template","Überschrift","Ad hoc","Abschnittsüberschrift">
-			use = <"Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".
-
-">
-			misuse = <"Die Überschrift sollte in einem Template nicht unverändert verwendet werden.">
-		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.">
-			use = <"Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".">
-			misuse = <"Ska inte lämnas oförändrad i en openEHR-mall.">
-		>
 		["ru"] = <
 			language = <[ISO_639-1::ru]>
 			purpose = <"Базовый заголовок раздела, должен быть переименован в локальном шаблоне ">
 			keywords = <"раздел","шаблон","заготовка","название","образец">
 			copyright = <"© openEHR Foundation">
 			use = <"используется для создания и именования разделов в локальных шаблонах">
-			misuse = <"*Not to be left unchanged in a template.(en)">
-		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.">
-			use = <"Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".">
-			misuse = <"Skal ikke stå med uendret navn i en templat.">
 		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
@@ -108,12 +61,11 @@ description
 			use = <"Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".">
 			misuse = <"No debe mantenerse sin cambios en una plantilla.">
 		>
-		["pt-br"] = <
-			language = <[ISO_639-1::pt-br]>
-			purpose = <"Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.">
-			keywords = <"cabeçalho", ...>
-			use = <"Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".">
-			misuse = <"Não deve manter a configuração original no template.">
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.">
+			use = <"Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"">
+			misuse = <"Skal ikke stå med uendret navn i en template.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -131,15 +83,15 @@ description
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["current_contact"] = <"Ian McNicoll, freshEHR Clinical Informatics UK, ian@freshEHR.com">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ADAD488D3CC144486612C75F4E995F94">
-		["build_uid"] = <"b980bb02-d3cf-4624-9e98-ffc6a3a167c5">
-		["revision"] = <"1.0.6">
+		["MD5-CAM-1.0.1"] = <"833221C23E2B25AD3CB9B0B78EE33740">
+		["build_uid"] = <"a4c3c27d-a88b-4702-89c2-c016faf8e0d8">
+		["revision"] = <"1.0.0">
 	>
 
 definition
@@ -158,8 +110,8 @@ ontology
 		["ru"] = <
 			items = <
 				["at0000"] = <
-					text = <"заготовка заголовка">
-					description = <"Образец заголовка раздела">
+					text = <"*Ad hoc heading(en)">
+					description = <"*A generic section header which should be renamed in a template to suit a specific clinical context.(en)">
 				>
 			>
 		>
@@ -182,32 +134,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Templat-overskrift">
-					description = <"En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.">
-				>
-			>
-		>
-		["pt-br"] = <
-			items = <
-				["at0000"] = <
-					text = <"Cabeçalho Ad hoc">
-					description = <"Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico.">
-				>
-			>
-		>
-		["sv"] = <
-			items = <
-				["at0000"] = <
-					text = <"Rubrik">
-					description = <"En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.">
-				>
-			>
-		>
-		["de"] = <
-			items = <
-				["at0000"] = <
-					text = <"Ad hoc Überschrift">
-					description = <"Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.">
+					text = <"Ad hoc heading">
+					description = <"En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst.">
 				>
 			>
 		>

@@ -1,0 +1,417 @@
+archetype (adl_version=1.4; uid=39eb26e2-1263-4d86-ae51-032b2cd1f2d2)
+	openEHR-EHR-OBSERVATION.travel_history.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-02-27">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"768f1bc49f85ccf02b8c6b222a6eceb3">
+		["build_uid"] = <"c50b6635-2856-3110-a977-7dd3f45eded2">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Trip details
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0059] occurrences matches {0..*} matches {    -- Reason for travel
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0060,    -- Leisure
+													at0061,    -- Visiting friends and relatives
+													at0062,    -- Business
+													at0063,    -- Research/education
+													at0064,    -- Missionary/volunteer work
+													at0065,    -- Providing medical care
+													at0066]    -- Receiving medical care
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0070] occurrences matches {0..1} matches {    -- Duration of travel
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0071] occurrences matches {0..1} matches {    -- Date of return
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									CLUSTER[at0067] occurrences matches {0..*} matches {    -- Countries visited
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0068] occurrences matches {0..1} matches {    -- Country
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0069] occurrences matches {0..1} matches {    -- Itinerary in country
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0105] occurrences matches {0..1} matches {    -- Period in country
+												value matches {
+													DV_INTERVAL<DV_DATE_TIME> matches {*}
+												}
+											}
+											CLUSTER[at0106] occurrences matches {0..*} matches {    -- Regions visited
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0107] occurrences matches {0..1} matches {    -- Region
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0108] occurrences matches {0..1} matches {    -- Period in region
+														value matches {
+															DV_INTERVAL<DV_DATE_TIME> matches {*}
+														}
+													}
+												}
+											}
+										}
+									}
+									ELEMENT[at0072] occurrences matches {0..1} matches {    -- Type of accommodations and sleeping arrangements
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0049] occurrences matches {0..*} matches {    -- Recreational activities
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0050,    -- Safari
+													at0051,    -- Hiking
+													at0052,    -- Swimming
+													at0053,    -- Ocean (scuba diving, marine life exposure)
+													at0054,    -- Freshwater exposure (lake, river, stream)
+													at0055,    -- Swimming pools and hot tubs
+													at0056,    -- Rafting/boating
+													at0057,    -- Sightseeing
+													at0058]    -- Other adventuresome activities
+												}
+											}
+										}
+									}
+									ELEMENT[at0102] occurrences matches {0..1} matches {    -- Common exposures
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0103] occurrences matches {0..1} matches {    -- Insect bites
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0085] occurrences matches {0..*} matches {    -- Foods eaten
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0086,    -- Raw produce
+													at0087,    -- Undercooked meat
+													at0088,    -- Unpasteurized dairy products
+													at0089]    -- Seafood
+												}
+											}
+										}
+									}
+									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Source of drinking water
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0091] occurrences matches {0..*} matches {    -- Other exposures
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0092,    -- Sexual activity during travel (use of condoms, new partner)
+													at0093,    -- Tattoos or piercings received while traveling
+													at0094,    -- Animal or arthropod bites, stings, or scratches
+													at0095]    -- Known outbreaks in the countries visited
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0096] occurrences matches {0..*} matches {    -- Use of travel precautions
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0097,    -- Effective insect repellent (DEET 25%–40% or other EPA-registered product)
+													at0098,    -- Bed nets
+													at0099]    -- Adherence to malaria prophylaxis
+												}
+											}
+										}
+									}
+									allow_archetype CLUSTER[at0109] occurrences matches {0..*} matches {    -- Exposure details
+										include
+											archetype_id/value matches {/.*/}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0100] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0101] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Trip details">
+					description = <"travel history">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0049"] = <
+					text = <"Recreational activities">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"Safari">
+					description = <"*">
+				>
+				["at0051"] = <
+					text = <"Hiking">
+					description = <"*">
+				>
+				["at0052"] = <
+					text = <"Swimming">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"Ocean (scuba diving, marine life exposure)">
+					description = <"*">
+				>
+				["at0054"] = <
+					text = <"Freshwater exposure (lake, river, stream)">
+					description = <"*">
+				>
+				["at0055"] = <
+					text = <"Swimming pools and hot tubs">
+					description = <"*">
+				>
+				["at0056"] = <
+					text = <"Rafting/boating">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"Sightseeing">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"Other adventuresome activities">
+					description = <"*">
+				>
+				["at0059"] = <
+					text = <"Reason for travel">
+					description = <"*">
+				>
+				["at0060"] = <
+					text = <"Leisure">
+					description = <"*">
+				>
+				["at0061"] = <
+					text = <"Visiting friends and relatives">
+					description = <"*">
+				>
+				["at0062"] = <
+					text = <"Business">
+					description = <"*">
+				>
+				["at0063"] = <
+					text = <"Research/education">
+					description = <"*">
+				>
+				["at0064"] = <
+					text = <"Missionary/volunteer work">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"Providing medical care">
+					description = <"*">
+				>
+				["at0066"] = <
+					text = <"Receiving medical care">
+					description = <"*">
+				>
+				["at0067"] = <
+					text = <"Countries visited">
+					description = <"*">
+				>
+				["at0068"] = <
+					text = <"Country">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"Itinerary in country">
+					description = <"*">
+				>
+				["at0070"] = <
+					text = <"Duration of travel">
+					description = <"*">
+				>
+				["at0071"] = <
+					text = <"Date of return">
+					description = <"*">
+				>
+				["at0072"] = <
+					text = <"Type of accommodations and sleeping arrangements">
+					description = <"*">
+				>
+				["at0085"] = <
+					text = <"Foods eaten">
+					description = <"*">
+				>
+				["at0086"] = <
+					text = <"Raw produce">
+					description = <"*">
+				>
+				["at0087"] = <
+					text = <"Undercooked meat">
+					description = <"*">
+				>
+				["at0088"] = <
+					text = <"Unpasteurized dairy products">
+					description = <"*">
+				>
+				["at0089"] = <
+					text = <"Seafood">
+					description = <"*">
+				>
+				["at0091"] = <
+					text = <"Other exposures">
+					description = <"*">
+				>
+				["at0092"] = <
+					text = <"Sexual activity during travel (use of condoms, new partner)">
+					description = <"*">
+				>
+				["at0093"] = <
+					text = <"Tattoos or piercings received while traveling">
+					description = <"*">
+				>
+				["at0094"] = <
+					text = <"Animal or arthropod bites, stings, or scratches">
+					description = <"*">
+				>
+				["at0095"] = <
+					text = <"Known outbreaks in the countries visited">
+					description = <"*">
+				>
+				["at0096"] = <
+					text = <"Use of travel precautions">
+					description = <"*">
+				>
+				["at0097"] = <
+					text = <"Effective insect repellent (DEET 25%–40% or other EPA-registered product)">
+					description = <"*">
+				>
+				["at0098"] = <
+					text = <"Bed nets">
+					description = <"*">
+				>
+				["at0099"] = <
+					text = <"Adherence to malaria prophylaxis">
+					description = <"*">
+				>
+				["at0100"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0101"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0102"] = <
+					text = <"Common exposures">
+					description = <"*">
+				>
+				["at0103"] = <
+					text = <"Insect bites">
+					description = <"*">
+					comment = <" (for example, mosquito, tick, sand fly, tsetse fly)">
+				>
+				["at0104"] = <
+					text = <"Source of drinking water">
+					description = <"*">
+				>
+				["at0105"] = <
+					text = <"Period in country">
+					description = <"*">
+				>
+				["at0106"] = <
+					text = <"Regions visited">
+					description = <"*">
+				>
+				["at0107"] = <
+					text = <"Region">
+					description = <"*">
+				>
+				["at0108"] = <
+					text = <"Period in region">
+					description = <"*">
+				>
+				["at0109"] = <
+					text = <"Exposure details">
+					description = <"*">
+				>
+			>
+		>
+	>
